@@ -1,0 +1,59 @@
+{{!-- A series of if statements to determine if the game is playing, if there is a winner, or if the game is a draw.
+Else statements determines that neither of the above is true, therefor to display the rules of play and
+a start button to begin the game.
+--}}
+
+{{!-- Update to include the usage of the shake hardware input.
+If the user is playing on a desktop, display instructions applicable to the desktop. If the user
+is playing on a mobile device, display the instructions applicable. --}}
+
+{{#if playing}}
+  {{#if desktop}}
+    <div class="text-center">
+      <button class = "restart" {{action "start"}}>Play Again</button>
+    </div>
+  {{else}}
+    <div class="text-center">
+      <button class = "restart-mobile" {{action "start"}}>Tap or Shake to Play Again</button>
+    </div>
+  {{/if}}
+  {{#if winner}}
+    <div class="game-message">
+      '{{winner}}'Player Won!
+    </div>
+  {{/if}}
+  {{#if draw}}
+    <div class="game-message">
+      Let's call it a draw.
+    </div>
+  {{/if}}
+{{else}}
+  {{#if desktop}}
+    <div class="text-center"><h2>Rules of Play</h2><br></div>
+    <div class="text-left">
+      <ul>
+        <li>Point the cursor over the row you wish to drop your piece in</li>
+        <li>Left click to drop your piece</li>
+        <li>Connect four pieces vertically, horizontally or diagonally to win</li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <button class="start" {{action "start"}}>Play!</button>
+    </div>
+  {{else}}
+    <div class="text-center"><h2>Rules of Play</h2><br></div>
+    <div class="text-left">
+      <ul>
+        <li class="mobile">Tap the row you wish to drop your piece in</li>
+        <br>
+        <li class="mobile">Connect four pieces vertically, horizontally or diagonally to win</li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <button class="start-mobile" {{action "start"}}>Tap or Shake Your Device to Play!</button>
+    </div>
+  {{/if}}
+{{/if}}
+
+{{!-- {{Created canvas drawn at pixel level.}} --}}
+<canvas id="stage" width="380" height="380"></canvas>

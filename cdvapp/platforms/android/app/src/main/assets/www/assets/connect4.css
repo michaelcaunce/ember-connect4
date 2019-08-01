@@ -1,0 +1,100 @@
+/* Generic Styles */
+body {
+    font-family: monospace;
+    font-size: 12pt;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+
+/* Fixed layout for the application */
+#app {
+    max-width: 400px;
+    background: #FOF7F4;
+    border: 6px solid #353839;
+    border-radius: 8px;
+
+}
+/* Header styling */
+header img {
+    background: #FOF7F4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 380px;
+    margin-top: 5px
+}
+
+/* Main game area styling */
+article {
+    height: 400px;
+    overflow: auto;
+    color: #353839;
+    padding: 0.5rem;
+    position: relative;
+}
+article h2, h3 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+article li {
+  padding-bottom: 0.5rem;
+}
+.game-message {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+/*Game Buttons*/
+.start, .restart {
+    background-color: #ef3c42;
+    color: #ffffff;
+    border-color: #000000;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 10pt;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+.restart {
+  font-size: 12px;
+  padding: 8px 28px;
+}
+.start, .restart {
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.start:hover, .restart:hover {
+  background-color: #ffe800; /* Green */
+  color: #000000;
+}
+
+.mobile {
+  margin-left: -20px;
+}
+/* Footer styling */
+footer {
+    background: 	#353839;
+    color: #8fb9ff;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+footer:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+::-webkit-scrollbar {
+    display: none;
+}

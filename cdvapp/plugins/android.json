@@ -1,0 +1,25 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "ttt23212438.computing.edgehill.ac.uk"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "ttt23212438.computing.edgehill.ac.uk"
+    },
+    "cordova-plugin-shake": {
+      "PACKAGE_NAME": "ttt23212438.computing.edgehill.ac.uk"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "ttt23212438.computing.edgehill.ac.uk"
+    }
+  }
+}

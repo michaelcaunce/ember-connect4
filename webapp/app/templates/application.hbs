@@ -1,0 +1,17 @@
+{{!-- Application template looks like HTML but there is function attached.
+The {{outlet}} is an example of handlebars within HTML. This is a special marker, indicating that
+the position where any childs templates content is to be displayed. In this case, connect4.hbs.
+--}}
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+<section id="app">
+  <header>
+    <img src="assets/logo2.png" alt="Connect 4 Logo">
+  </header>
+  <article>
+    {{outlet}}
+  </article>
+  <footer>
+    <div class="float-left footer-left">| Michael Caunce - 23212438 </div>
+    <div class="float-right footer-right">CIS3158 - Coursework Two |</div>
+  </footer>
+</section>

@@ -1,0 +1,4 @@
+#Mon Dec 24 10:55:54 GMT 2018
+base.0=/home/michaelcaunce/projects/CIS3158/Coursework/Connect4Mobile/cdvapp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
