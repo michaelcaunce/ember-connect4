@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
 /* Generic Styles */
 body {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13pt;
 }
 .float-left {
@@ -17,13 +20,13 @@ body {
 #app {
     max-width: 400px;
     background: #FOF7F4;
-    border: 6px solid #353839;
+    border: 6px solid #47464A;
     border-radius: 8px;
 
 }
 /* Header styling */
 header img {
-    background: #FOF7F4;
+    /* background: #FOF7F4; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,8 +62,8 @@ article li {
 .start {
     background-color: #ef3c42;
     color: #ffffff;
-    font-family: 'Acme', sans-serif;
-    border-color: #000000;
+    font-family: 'Archivo', sans-serif;
+    border-color: #47464A;
     padding: 12px 28px;
     border-radius: 8px;
     font-size: 13pt;
@@ -70,8 +73,8 @@ article li {
 .restart {
     background-color: #ef3c42;
     color: #ffffff;
-    font-family: 'Acme', sans-serif;
-    border-color: #000000;
+    font-family: 'Archivo', sans-serif;
+    border-color: #47464A;
     padding: 12px 18px;
     border-radius: 8px;
     font-size: 12pt;
@@ -91,7 +94,7 @@ article li {
 .start-mobile, .restart-mobile {
     background-color: #ef3c42;
     color: #ffffff;
-    font-family: 'Acme', sans-serif;
+    font-family: 'Archivo', sans-serif;
     border-color: #000000;
     padding: 12px 18px;
     border-radius: 8px;
@@ -116,7 +119,15 @@ article li {
 }
 /* Footer styling */
 footer {
-    background: #353839;
+  background: #47464A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100px;
+}
+
+footer img {
+  width:300px;
 }
 .footer-left {
   color: #ffe800;
